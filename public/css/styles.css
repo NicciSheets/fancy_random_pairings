@@ -1,0 +1,46 @@
+body
+{
+      background-image: url(/img/chalkboard.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: verdana, sans-serif;
+  font-size: 1.2rem;
+}
+
+table
+{
+  width: 8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.4rem 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: verdana, sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.title
+{
+  margin-top: 66;
+  color: #fffc;
+  font-family: verdana, sans-serif;
+  font-size: 4rem;
+}
+
+.txtbox
+{
+  width: 7rem;
+}
+
+
+
