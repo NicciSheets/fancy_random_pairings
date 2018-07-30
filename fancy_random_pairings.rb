@@ -1,5 +1,5 @@
 def name_arr(names)
-	names.shuffle
+	names.split(',').shuffle
 end 
 
 def name_arr_paired(names)
@@ -16,5 +16,4 @@ def pairings(names)
 	end
 	pairs
 end
-#names = ["1", "2", "3", "4", "5"]
-#puts name_arr(names)
+

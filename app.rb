@@ -8,18 +8,26 @@ get '/' do
 end
 
 post '/name_input' do
-  	names = params[:names]
-  	result = pairings(names).to_s
-  	p "result #{result}"
- 	redirect '/pairs?result=' + result 
+  	names = params[:names].join(',')
+  	p "names params #{params}"
+  	p "#{names.class}"
+ 	redirect '/grouped_pairs?names=' + names
 end
 
-get '/pairs' do
-	p "pairs is #{params}"
-	result = params[:result]
-	p "result is #{result}"
-  erb :grouped_pairs, locals:{result: result}
+get '/grouped_pairs' do
+	result = pairings(params[:names])
+	p "second params are #{params}"
+	
+
+	#p "result is #{result}
+
+	erb :grouped_pairs, locals:{result: result}
 end
 
+# post '/pairs' do
+# 	result = pairings(params[:names])
+# 	p "result params are #{params}"
+# 	erb :grouped_pairs
+# end
 
 
