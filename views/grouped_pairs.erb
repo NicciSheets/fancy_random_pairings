@@ -3,8 +3,11 @@
 <form method="post" action="pairs">
 
 <div class="results">
-	<%=result%>
-	<%=result.class%>
+<% poop = eval(result).each { |x| x.each { |y| puts y } } %>
+<% poop.each do |x| %>
+		<%= x.join("-") %><br>
+<% end %>
+		
 </div>
 </form>
 <div class="return_home">
@@ -13,3 +16,4 @@
 
 	
 	
+
