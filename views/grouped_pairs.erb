@@ -1,19 +1,24 @@
 <link rel="stylesheets" type="text/css" href="/css/styles.css">
 
 <form method="post" action="pairs">
+	<hr color="black">
 
 <div class="results">
 <% poop = eval(result).each { |x| x.each { |y| puts y } } %>
+<table>
 <% poop.each do |x| %>
-		<%= x.join("-") %><br>
+		<tr><td><%= x.join("-") %></td></tr>
 <% end %>
+</table>
 		
 </div>
 </form>
-<div class="return_home">
-	<a href="https://paired-names-ns.herokuapp.com" style="color: black;">Return to Main Page</a>
-</div>
 
+
+
+<footer align="middle">
+	<div class="footer_text"><a href="https://paired-names-ns.herokuapp.com">Return to Main Page</a> </div>
+</footer>
 	
 	
 
